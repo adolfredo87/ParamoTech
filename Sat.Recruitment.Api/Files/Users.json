@@ -1,27 +1,19 @@
 [
   {
-    "Email": "Juan@marmol.com",
-    "Address": "Peru 2464",
-    "Money": "1234",
-    "Name": "Juan",
-    "Phone": "+5491154762312",
+    "Email": "jaime@got.com",
+    "Address": "Desembarco del rey",
+    "Money": "5462",
+    "Name": "Jamie Lanister",
+    "Phone": "+54 11 53545445",
     "UserType": "Normal"
   },
   {
-    "Email": "Franco.Perez@gmail.com",
-    "Address": "Alvear y Colombres",
-    "Money": "112234",
-    "Name": "Franco",
-    "Phone": "+534645213542",
+    "Email": "cersei@got.com",
+    "Address": "Desembarco del rey",
+    "Money": "7523",
+    "Name": "Cersei Lanister",
+    "Phone": "+54 11 74853124",
     "UserType": "Premium"
-  },
-  {
-    "Email": "Agustina@gmail.com",
-    "Address": "Garay y Otra Calle",
-    "Money": "112234",
-    "Name": "Agustina",
-    "Phone": "+534645213542",
-    "UserType": "SuperUser"
   },
   {
     "Email": "mike@gmail.com",

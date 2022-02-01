@@ -2,6 +2,7 @@
 using Sat.Recruitment.Api.Data.Repositories.Implements;
 using Sat.Recruitment.Api.Models;
 using Sat.Recruitment.Api.Services.Implements;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Sat.Recruitment.Api.Controllers
@@ -34,6 +35,13 @@ namespace Sat.Recruitment.Api.Controllers
                 };
 
             return await userService.RespuestaResult(name, email, address, phone, userType, money);
+        }
+
+        [HttpGet]
+        [Route("/GetUsersAsync")]
+        public async Task<List<User>> GetUsersAsync()
+		{
+            return await userService.GetUsersAsync(); ;
         }
 
         //Validate errors

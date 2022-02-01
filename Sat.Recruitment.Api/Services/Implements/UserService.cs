@@ -19,18 +19,13 @@ namespace Sat.Recruitment.Api.Services.Implements
 			this._userRepository = userRepository; sf = new StreamFile(); _users = new List<User>();
 		}
 
-		public List<User> ObtenerListadoUsuarios()
-		{
-			return _userRepository.Listar().ToList();
-		}
-
-		public void Create(User user) 
+		private void Create(User user) 
 		{
 			// Se guarda en el Modelo
 			_userRepository.Agregar(user);
 		}
 
-		public Boolean EsDuplicado(User usuNew, List<User> users)
+		private Boolean EsDuplicado(User usuNew, List<User> users)
 		{
 			var isDuplicated = false;
 			foreach (var user in users)
@@ -48,6 +43,11 @@ namespace Sat.Recruitment.Api.Services.Implements
 				}
 			}
 			return isDuplicated;
+		}
+
+		private List<User> ObtenerListadoUsuarios()
+		{
+			return _userRepository.Listar().ToList();
 		}
 
 		private User RefactorUser(string name, string email, string address, string phone, string userType, string money)
@@ -83,7 +83,7 @@ namespace Sat.Recruitment.Api.Services.Implements
 					});
 				}
 			}
-			catch (Exception ex)
+			catch
 			{
 				return Task.FromResult(new Result()
 				{
@@ -97,6 +97,11 @@ namespace Sat.Recruitment.Api.Services.Implements
 				IsSuccess = true,
 				Errors = "User Created"
 			});
+		}
+
+		public Task<List<User>> GetUsersAsync()
+		{
+			return Task.FromResult(this.ObtenerListadoUsuarios());
 		}
 	}
 }

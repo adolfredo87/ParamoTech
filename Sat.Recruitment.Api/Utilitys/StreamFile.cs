@@ -48,7 +48,7 @@ namespace Sat.Recruitment.Api.Utilitys
             objEscritor.Close();
         }
 
-        private void CrearArchivo(string path)
+        public void CrearArchivo(string path)
         {
             //** Verificar si existe el archivo **
             if (File.Exists(path))
