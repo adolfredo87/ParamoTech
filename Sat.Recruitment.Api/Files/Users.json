@@ -1,0 +1,34 @@
+[
+  {
+    "Email": "Juan@marmol.com",
+    "Address": "Peru 2464",
+    "Money": "1234",
+    "Name": "Juan",
+    "Phone": "+5491154762312",
+    "UserType": "Normal"
+  },
+  {
+    "Email": "Franco.Perez@gmail.com",
+    "Address": "Alvear y Colombres",
+    "Money": "112234",
+    "Name": "Franco",
+    "Phone": "+534645213542",
+    "UserType": "Premium"
+  },
+  {
+    "Email": "Agustina@gmail.com",
+    "Address": "Garay y Otra Calle",
+    "Money": "112234",
+    "Name": "Agustina",
+    "Phone": "+534645213542",
+    "UserType": "SuperUser"
+  },
+  {
+    "Email": "mike@gmail.com",
+    "Address": "Av. Juan G",
+    "Money": "138.88",
+    "Name": "Mike",
+    "Phone": "+349 1122354215",
+    "UserType": "Normal"
+  }
+]
