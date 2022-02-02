@@ -49,7 +49,7 @@ namespace Sat.Recruitment.Test
 			var userController = new UsersController();
             var result = await userController.GetUsersAsync();
 
-            Assert.Equal(2, result.Count);
+            Assert.Equal(2, result.Value.Count);
         }
     }
 }

@@ -39,9 +39,9 @@ namespace Sat.Recruitment.Api.Controllers
 
         [HttpGet]
         [Route("/GetUsersAsync")]
-        public async Task<List<User>> GetUsersAsync()
+        public async Task<ActionResult<List<User>>> GetUsersAsync()
 		{
-            return await userService.GetUsersAsync(); ;
+            return await userService.GetUsersAsync();
         }
 
         //Validate errors
